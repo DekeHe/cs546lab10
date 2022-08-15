@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <title>signup</title>
+</head>
+<body>
+    <div>
+        <h3>signup now</h3>
+        <form action="/signup" method="POST" id="login-form">
+            <label for="username">username</label>
+            <input type="text" name="username" id="username"
+            value="{{user.username}}">
+
+            <label for="password">password</label>
+            <input type="text" name="password" id="password"
+            value="{{user.password}}">
+
+            <button type="submit">signup</button>
+        </form>
+        {{#if hasError}}
+            <p id="error">{{error}}</p>
+        {{/if}}
+        <a href="/">Already have an account?Click here to log-in</a>
+    </div>
+</body>
