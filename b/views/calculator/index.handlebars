@@ -1,0 +1,57 @@
+<form id="staticForm" method="post">
+
+    <div class="formGroup">
+        <label for="number1">number1</label>
+        <input type="number" class="formControl" id="number1" 
+        name="number1"
+        >
+    </div>
+
+    <div class="formGroup">
+        <label for="number2">number2</label>
+        <input type="number" class="formControl" id="number2"
+        name="number2"
+        >
+    </div>
+
+    <div class="formGroup">
+        <label for="operation">operation </label>
+        <select class="formControl" id="operation"
+        name="operation" 
+        >
+            <option value="add">add</option>
+            <option value="substract">substract</option>
+            <option value="multiply">multiply</option>
+            <option value="divide">divide</option>
+        </select>
+    </div>
+
+    <div class="formGroup hidden" id="errorContainer">
+        <div class="alert alertDanger textGoesHere"></div>
+    </div>
+
+    <div class="formGroup">
+        <button type="submit" class="btn btnDefault">submit</button>
+    </div>
+
+    <div class="formGroup hidden" id="resultContainer">
+        <div class="alert alertSuccess textGoesHere"></div>
+    </div>
+
+    <input type="_method" value="PUT">
+</form>
+
+
+<p>This is a DOM example</p>
+	<div id="error" class="error" hidden>I'm an error</div>
+	<br>
+
+	<form method="POST" id="myForm">
+		<label id="formLabel">
+			Enter Text:
+			<input type="text" id="textInput" />
+			<button type="submit">Add Item</button>
+		</label>
+    
+	</form>
+	<ul id="list"></ul>

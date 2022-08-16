@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <title>login</title>
+</head>
+<body>
+    <h3>login</h3>
+    <form action="/login" method="post" id="loginForm">
+
+        <label for="username">username</label>
+        <input type="text" class="" id="username"
+        name="username" value="" placeholder="">
+
+        <label for="v">username</label>
+        <input type="text" class="" id="password"
+        name="password" value="" placeholder="">
+
+        <button type="submit">login</button>
+    </form>
+    {{#if hasError}}
+        <p id="error">{{error}}</p>
+    {{/if}}
+    <a href="/signup">signup</a>
+</body>
+</html>
